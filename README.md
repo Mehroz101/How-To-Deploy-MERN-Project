@@ -1,6 +1,6 @@
 # How-To-Deploy-MERN-Project
 
-### Add versel.json file in backend
+## 1. Add versel.json file in backend
 ```
 {
   "installCommand": "npm install --legacy-peer-deps",
@@ -22,7 +22,7 @@
 
 ```
 
-### Add versel.json file in frontend
+## 2. Add versel.json file in frontend
 
 ```
 {
@@ -35,11 +35,23 @@
 }
 
 ```
-### Go to versel webiste
+## 3. Deploy Backend
+
+ Go to versel webiste
 1. create new project
 2. select project from git repo
 3. give project name
 4. select the backend from root
 5. add env file
+6. hit deploy
+
+
+### 4. Deploy Frontend
+
+1. create new project
+2. select project from git repo
+3. give project name
+4. select the frontend from root
+5. add env file and give backend api url of backend of versel depolyed project
 6. hit deploy
 
