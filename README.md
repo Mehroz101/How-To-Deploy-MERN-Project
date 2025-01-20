@@ -24,6 +24,7 @@
 
 ## 2. Add versel.json file in frontend
 
+
 ```
 {
   "rewrites": [
