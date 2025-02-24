@@ -1,5 +1,6 @@
 # How-To-Deploy-MERN-Project
 
+## Javascript based project
 ## 1. Add versel.json file in backend
 ```
 {
@@ -36,6 +37,41 @@
 }
 
 ```
+## Typescript based project
+
+## 1. Add versel.json file in frontend
+
+```
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--max-old-space-size=4096"
+    }
+  }
+}
+
+```
+aslo edit the package.json file script section
+```
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+```
+add this in env file 
+```
+NODE_OPTIONS = --max-old-space-size=4096
+```
+## 2. Add versel.json file in backend
+
 ## 3. Deploy Backend
 
  Go to versel webiste
